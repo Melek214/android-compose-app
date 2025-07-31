@@ -12,7 +12,8 @@ fun AppNavHost(
     navController: NavHostController,
     startDestination:String=NavigationItem.Login.route
 ){
-    NavHost(navController = navController, startDestination = startDestination) {
+    NavHost(modifier = modifier,
+        navController = navController, startDestination = startDestination) {
         composable(NavigationItem.Login.route) {
             LoginScreen(navController)
         }
